@@ -1,7 +1,7 @@
 import React from "react";
-import '../styles/Footer.css';
-import { BsLinkedin } from 'react-icons/bs';
-import { AiFillGithub } from 'react-icons/ai'
+import "../styles/Footer.css";
+import { BsLinkedin } from "react-icons/bs";
+import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   return (
@@ -12,9 +12,9 @@ function Footer() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/carlos-s-710555119/"
         >
-          <p>Entre em contato comigo!</p>
-          <BsLinkedin className="socialLogos" />
+          Entre em contato comigo!
         </a>
+        <BsLinkedin className="socialLogos" />
       </div>
       <div className="socialLinks">
         <a
@@ -22,9 +22,9 @@ function Footer() {
           target="_blank"
           rel="noreferrer"
         >
-          <p>Acompanhe meus projetos!</p>
-          <AiFillGithub className="socialLogos" />
+          Acompanhe meus projetos!
         </a>
+        <AiFillGithub className="socialLogos" />
       </div>
     </footer>
   );
