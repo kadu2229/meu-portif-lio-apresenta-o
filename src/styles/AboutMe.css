@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(140, 140, 255);
+}
+
+.About-Body {
+  height: 100vh;
+  width: 100%;
+  
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.aboutMe {
+  animation: 3s animacao;
+}
+
+.aboutMe img {
+  width: 400px;
+  overflow: hidden;
+}
+
+.MyJorney {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 90%;
+  background-color: rgba(95, 95, 180, 0.384);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.336);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10vh
+}
+
+.MyJorney h2 {
+  color: white;
+}
+
+.trybe {
+  font-weight: 700;
+  color: rgb(72, 201, 72);
+}
+
+.MyJorney p {
+  text-align: center;
+  color: white;
+  font-size: 21px;
+}
+
+.aboutIMG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+}
+
+.aboutIMG svg {
+  animation: 1s setaAnimation;
+  animation-iteration-count: infinite;
+  margin-bottom: 20px;
+}
+
+@media animacao {
+  
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 696px) {
+  .aboutMe img {
+    width: 90%;
+    overflow: hidden;
+  }
+}
+
+@keyframes setaAnimation {
+  from {
+    transform: translateY(-7px);
+  }
+
+  to {
+    transform: translateY(7px);
+  }
+}

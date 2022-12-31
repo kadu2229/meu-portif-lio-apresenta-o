@@ -5,7 +5,7 @@
 }
 
 .HeaderContent {
-  background-color: rgb(0, 0, 173);
+  background-color: rgb(112, 112, 194);
   /* box-shadow: 0 10px 50px rgb(92, 92, 92); */
 }
 
@@ -15,6 +15,10 @@
   height: 15vh;
   justify-content: space-between;
   margin: 0 20px;
+}
+
+.header-logo img {
+  width: 10vh;
 }
 
 .buttonsHeader {
@@ -30,7 +34,7 @@
 
 .buttonsHeader:hover {
   background-color: white;
-  color: black;
+  color: rgb(126, 126, 204);
   border-radius: 5px;
 }
 
