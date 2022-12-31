@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/Home.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { AiOutlineArrowDown, AiFillHtml5 } from "react-icons/ai";
+import { AiOutlineArrowDown, AiFillHtml5,AiFillGithub } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-import { BsFillBootstrapFill } from "react-icons/bs";
+import { BsFillBootstrapFill,BsLinkedin } from "react-icons/bs";
 import { SiJest } from "react-icons/si";
 
 function Home() {
@@ -16,8 +16,24 @@ function Home() {
       <Header />
       <section className="Home-Section">
         <div className="titulos">
-          <h1>Olá, eu sou Carlos</h1>
-          <h2>e sou um desenvolvedor front-end.</h2>
+          <h1>CARLOS EDUARDO</h1>
+          <h3>FRONT-END DEVELOPER</h3>
+          <div className="contacts-containter">
+            <a
+              className="contacts"
+              href="https://www.linkedin.com/in/carlos-s-710555119/"
+            >
+              linkedin
+              <BsLinkedin />
+            </a>
+            <a
+              className="contacts"
+              href="https://github.com/kadu2229?tab=repositories"
+            >
+              github
+              <AiFillGithub />
+            </a>
+          </div>
         </div>
         <img
           src="https://ouch-cdn2.icons8.com/vZD-nOO0-rKGloPBW0WjLQF-i8hfkpa7QWY_3L4YTGA/rs:fit:684:456/czM6Ly9pY29uczgu/b3VjaC1wcm9kLmFz/c2V0cy9zdmcvMzAx/L2Y1ZWI5ZGEwLTM3/ZWMtNDUxYy1iODNl/LTVjMzc1NGU5NjQx/NC5zdmc.png"

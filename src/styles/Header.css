@@ -17,6 +17,10 @@
   margin: 0 20px;
 }
 
+.header-logo img {
+  width: 10vh;
+}
+
 .buttonsHeader {
   cursor: pointer;
   padding: 10px 3px;
@@ -30,7 +34,7 @@
 
 .buttonsHeader:hover {
   background-color: white;
-  color: blue;
+  color: rgb(126, 126, 204);
   border-radius: 5px;
 }
 

@@ -4,13 +4,13 @@
 }
 
 .Home-Section {
-  background-image: linear-gradient(white, rgb(140, 140, 255));
   overflow: hidden;
-  height: 600px;
+  height: 56vh;
   justify-content: center;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  background-color: rgb(240, 240, 240);
 }
 
 .Home-Section img {
@@ -28,6 +28,41 @@
   }
 }
 
+@keyframes setaAnimation {
+  from {
+    transform: translateY(-7px);
+  }
+
+  to {
+    transform: translateY(7px);
+  }
+}
+
+.contacts-containter {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.contacts {
+  display: flex;
+  text-decoration: none;
+  background-color: rgb(140, 140, 255);
+  color: white;
+  margin: 10px 10px;
+  padding: 10px;
+  border-radius: 10px;
+  align-items: center;
+  text-align: center;
+  transition: 0.3s;
+  left: 0;
+}
+
+.contacts:hover {
+  background-color: rgb(81, 81, 156);
+  color: white;
+}
 
 .titulos {
   font-size: 25px;
@@ -39,11 +74,15 @@
   height: 300px;
   padding: 10px;
   border-radius: 10px;
-  color: rgb(92, 92, 209);
+  color: rgb(140, 140, 255);
 }
 
 .titulos {
-  animation: 4s animacao;
+  animation: 3s animacao;
+}
+
+.contacts {
+  box-shadow: 2px 2px 5px rgb(141, 141, 141);
 }
 
 .Home-Skills {
@@ -63,11 +102,17 @@
   color: white;
 }
 
+.skills-h1 svg {
+  color: white;
+  animation: 1s setaAnimation;
+  animation-iteration-count: infinite;
+}
+
 .skills-h1 h1 {
   margin: 3vh;
   font-size: 5vh;
-  color: rgb(255, 255, 255);
-  background-color: rgb(104, 114, 255);
+  background-color: rgb(255, 255, 255);
+  color: rgb(104, 114, 255);
   box-shadow: 2px 2px 5px rgb(141, 141, 141);
   padding: 10px;
   border-radius: 10px;
@@ -212,8 +257,8 @@
   }
 
   .Home-Section img {
-    width: 300px;
-    margin-bottom: 60px;
+    height: max-content;
+    width: max-content;
   }
 
   .titulos {

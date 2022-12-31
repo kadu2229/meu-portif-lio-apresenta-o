@@ -17,14 +17,16 @@ function Header() {
   return (
     <header className="HeaderContent">
       <nav className="HeaderNav">
-        <button onClick={ ToHome } className="buttonsHeader">
+        <button onClick={ToHome} className="buttonsHeader">
           <div>
             <AiFillHome className="homeIcon" />
           </div>
           Home
         </button>
         <div className="aboutMeAndPortifolio">
-          <button onClick={ ToAbout } type="button" className="buttonsHeader">SOBRE MIM</button>
+          <button onClick={ToAbout} type="button" className="buttonsHeader">
+            SOBRE MIM
+          </button>
           <hr />
           <button className="buttonsHeader">PORTIFÓLIO</button>
         </div>
