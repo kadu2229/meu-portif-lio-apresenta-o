@@ -2,12 +2,12 @@ import React from "react";
 import "../styles/Home.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import { AiOutlineArrowDown, AiFillHtml5,AiFillGithub } from "react-icons/ai";
+import { AiOutlineArrowDown, AiFillHtml5, AiFillGithub } from "react-icons/ai";
 import { DiCss3 } from "react-icons/di";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaReact } from "react-icons/fa";
 import { SiRedux } from "react-icons/si";
-import { BsFillBootstrapFill,BsLinkedin } from "react-icons/bs";
+import { BsFillBootstrapFill, BsLinkedin } from "react-icons/bs";
 import { SiJest } from "react-icons/si";
 
 function Home() {
@@ -20,6 +20,8 @@ function Home() {
           <h3>FRONT-END DEVELOPER</h3>
           <div className="contacts-containter">
             <a
+              rel="noreferrer"
+              target="_blank"
               className="contacts"
               href="https://www.linkedin.com/in/carlos-s-710555119/"
             >
@@ -27,6 +29,8 @@ function Home() {
               <BsLinkedin />
             </a>
             <a
+              rel="noreferrer"
+              target="_blank"
               className="contacts"
               href="https://github.com/kadu2229?tab=repositories"
             >
@@ -43,6 +47,7 @@ function Home() {
       <section className="Home-Skills">
         <div className="skills-h1">
           <h1>Minhas Skills São</h1>
+          <p className="scroll-down">scroll down</p>
           <AiOutlineArrowDown />
         </div>
         <section className="skills">

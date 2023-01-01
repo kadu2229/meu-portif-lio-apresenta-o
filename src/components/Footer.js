@@ -1,7 +1,5 @@
 import React from "react";
 import "../styles/Footer.css";
-import { BsLinkedin } from "react-icons/bs";
-import { AiFillGithub } from "react-icons/ai";
 
 function Footer() {
   return (
