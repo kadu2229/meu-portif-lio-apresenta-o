@@ -1,18 +1,22 @@
 import React from "react";
 import "../styles/Header.css";
 import { AiFillHome } from "react-icons/ai";
-import { useHistory } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function Header() {
   const history = useHistory();
 
   const ToAbout = () => {
-    history.push('/AboutMe')
-  }
+    history.push("/AboutMe");
+  };
 
   const ToHome = () => {
-    history.push('/')
-  }
+    history.push("/");
+  };
+
+  const ToPortifólio = () => {
+    history.push("/portifolio");
+  };
 
   return (
     <header className="HeaderContent">
@@ -28,7 +32,9 @@ function Header() {
             SOBRE MIM
           </button>
           <hr />
-          <button className="buttonsHeader">PORTIFÓLIO</button>
+          <button onClick={ToPortifólio} className="buttonsHeader">
+            PORTIFÓLIO
+          </button>
         </div>
       </nav>
     </header>

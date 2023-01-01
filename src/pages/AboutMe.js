@@ -25,14 +25,14 @@ function AboutMe() {
               aprendendo a montar e desmonstar computadores, na adolescência
               comecei a aprender a desbloquear consoles, e depois do ensino
               médio cursei design gráfico. Após terminar o curso começei a
-              trabalhar na área mas ainda n sentia que aquilo era o que eu
+              trabalhar na área mas ainda não sentia que aquilo era o que eu
               queria até que em 2021 eu conheci o professor Gustavo guanabara e
               começei a fazer todos os cursos da plataforma curso em vídeo, mas
-              ainda n sentia que tinha conhecimento o suficiente pra ingressar
+              ainda não sentia que tinha conhecimento o suficiente pra ingressar
               no mercado, então comecei a estudar por mim mesmo e me aprofundar
-              o máximo possível no mas das tecnologias porém... me faltava
-              direcionamento para que as tecnologias que eu aprendia se
-              suplementassem. Foi então em 2022 que eu conheci a{" "}
+              o máximo possível no máximo de tecnologias possíveis porém... me
+              faltava direcionamento para que as tecnologias que eu aprendia se
+              suplementassem. Foi então em 2022 que eu conheci a
               <span className="trybe">TRYBE</span> e descobri minha paixão pelo
               frot-end e aprendi a habilidade de aprender e agora que sou
               oficialmente um dev front-end estou atrás da minha primeira
