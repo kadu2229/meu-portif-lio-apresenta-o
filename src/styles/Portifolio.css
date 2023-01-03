@@ -60,6 +60,7 @@
 .seeHow:hover {
   background-color: white;
   color: rgb(101, 101, 255);
+  cursor: pointer;
 }
 
 @media animacao {
