@@ -50,16 +50,12 @@
 .seeHow {
   color: white;
   background-color: rgb(57, 57, 255);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.226);
   padding: 20px;
   font-weight: 700;
   border: none;
   border-radius: 10px;
   transition: 0.3s;
-}
-
-.seeHow:hover {
-  background-color: white;
-  color: rgb(101, 101, 255);
   cursor: pointer;
 }
 
