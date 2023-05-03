@@ -1,17 +1,9 @@
-import React, { useState } from "react";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import "../styles/Portifolio.css";
+import { projects } from "../components/Projects";
 
 function Portifolio() {
-  const [seeMore, setSeeMore] = useState(true);
-  const [lessProjects] = useState([1, 2, 3, 4]);
-  const [moreProjects] = useState([1, 2, 3, 4, 5, 6, 7, 8]);
-
-  const upArray = () => {
-    setSeeMore(!seeMore);
-  };
-
   return (
     <div>
       <Header />
@@ -20,25 +12,13 @@ function Portifolio() {
           <h1>PROJETOS</h1>
         </div>
         <div className="projetos">
-          {seeMore === true
-            ? lessProjects.map((projeto) => {
-                return (
-                  <div className="projeto">
-                    <h2>EM BREVE</h2>
-                  </div>
-                );
-              })
-            : moreProjects.map((projeto) => {
-                return (
-                  <div className="projeto">
-                    <h2>EM BREVE</h2>
-                  </div>
-                );
-              })}
+          {projects.map(project => {
+            return <a target="blank" href={project.link} className="projeto">
+              {project.done === 'yes' ? <img src={project.img} /> : <h2>Em breve</h2>}
+              <h3>{project.description}</h3>
+            </a>
+          })}
         </div>
-        <button className="seeHow" onClick={upArray}>
-          {seeMore === true ? <p>VER MAIS</p> : <p>VER MENOS</p>}
-        </button>
       </section>
       <Footer />
     </div>
