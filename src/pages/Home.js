@@ -41,7 +41,7 @@ function Home() {
         </div>
         <img
           src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
-          alt="programer-img"
+          alt="programerImg"
         />
       </section>
       <section className="Home-Skills">
