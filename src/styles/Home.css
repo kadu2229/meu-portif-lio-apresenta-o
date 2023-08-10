@@ -14,8 +14,7 @@
 }
 
 .Home-Section img {
-  width: 400px;
-  height: 350px;
+  width: 600px;
   overflow: hidden;
 }
 
@@ -263,8 +262,8 @@
   }
 
   .Home-Section img {
-    height: 400px;
-    width: 300px;
+    height: max-content;
+    width: max-content;
   }
 
   .titulos {
