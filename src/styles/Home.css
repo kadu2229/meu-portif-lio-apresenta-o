@@ -13,8 +13,9 @@
   background-color: rgb(240, 240, 240);
 }
 
-.Home-Section img {
+.home-img img {
   width: 600px;
+  overflow: hidden;
 }
 
 @keyframes animacao {
@@ -258,11 +259,12 @@
     flex-direction: column;
     overflow: hidden;
     margin: 0;
+    height: 80vh;
   }
 
-  .Home-Section img {
-    height: max-content;
-    width: max-content;
+  .home-img img {
+    height: 100%;
+    width: 100%;
   }
 
   .titulos {

@@ -39,10 +39,12 @@ function Home() {
             </a>
           </div>
         </div>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
-          alt="programerImg"
-        />
+        <div className="home-img">
+          <img
+            src="https://static.vecteezy.com/system/resources/previews/011/153/368/original/3d-website-developer-working-on-laptop-illustration-png.png"
+            alt="programerImg"
+          />
+        </div>
       </section>
       <section className="Home-Skills">
         <div className="skills-h1">
