@@ -14,7 +14,8 @@
 }
 
 .Home-Section img {
-  width: 600px;
+  width: 50;
+  height: 100%;
   overflow: hidden;
 }
 
