@@ -14,7 +14,8 @@
   align-items: center;
   height: 15vh;
   justify-content: space-between;
-  margin: 0 20px;
+  margin-right: 10vh;
+  margin-left: 5vh;
 }
 
 .header-logo img {
