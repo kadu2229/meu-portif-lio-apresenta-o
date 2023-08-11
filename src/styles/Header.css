@@ -32,7 +32,7 @@
   font-weight: 700;
 }
 
-.buttonsHeader:hover {
+.buttonsHeader:active {
   background-color: white;
   color: rgb(126, 126, 204);
   border-radius: 5px;
