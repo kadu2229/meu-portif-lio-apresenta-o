@@ -2,7 +2,7 @@ import React from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import "../styles/AboutMe.css";
-import { AiOutlineArrowDown } from 'react-icons/ai';
+import { AiOutlineArrowDown } from "react-icons/ai";
 
 function AboutMe() {
   return (
@@ -19,24 +19,27 @@ function AboutMe() {
 
         <div className="MyJorney">
           <div>
-            <h2>MINHA JORNADA</h2>
+            <h2>Minha jornada na área de TI</h2>
             <p>
-              Sempre fui apaixonado por tecnologia desde pequeno, comecei
-              aprendendo a montar e desmonstar computadores, na adolescência
-              comecei a aprender a desbloquear consoles, e depois do ensino
-              médio cursei design gráfico. Após terminar o curso começei a
-              trabalhar na área mas ainda não sentia que aquilo era o que eu
-              queria até que em 2021 eu conheci o professor Gustavo guanabara e
-              começei a fazer todos os cursos da plataforma curso em vídeo, mas
-              ainda não sentia que tinha conhecimento o suficiente pra ingressar
-              no mercado, então comecei a estudar por mim mesmo e me aprofundar
-              o máximo possível no máximo de tecnologias possíveis porém... me
-              faltava direcionamento para que as tecnologias que eu aprendia se
-              suplementassem. Foi então em 2022 que eu conheci a
-              <span className="trybe">TRYBE</span> e descobri minha paixão pelo
-              frot-end e aprendi a habilidade de aprender e agora que sou
-              oficialmente um dev front-end estou atrás da minha primeira
-              oportunidade oficial no mercado de trabalho.
+              Olá! Meu nome é Carlos e sou universitário da área de Tecnologia
+              da Informação. Há dois anos, comecei a estudar programação e,
+              desde então, tenho me dedicado diariamente a aprender, praticar e
+              evoluir nessa área que tanto me fascina. Ao longo desse tempo,
+              tive contato com diversas linguagens, como Python, JavaScript e
+              Java, e desenvolvi projetos que me ajudaram a entender melhor o
+              funcionamento da lógica de programação e o desenvolvimento de
+              software. Além das aulas na universidade, busquei cursos extras,
+              participei de comunidades online e eventos para ampliar meus
+              conhecimentos e estar sempre por dentro das novidades do setor.
+              Agora, estou em busca da minha primeira oportunidade no mercado de
+              trabalho. Quero aplicar tudo o que aprendi até aqui, contribuir
+              com projetos reais, aprender com profissionais experientes e
+              continuar crescendo como desenvolvedor. Sei que ainda tenho muito
+              a aprender, mas estou preparado para os desafios e motivado a dar
+              o meu melhor. Sou apaixonado por tecnologia, gosto de resolver
+              problemas e acredito que a prática é a melhor forma de evoluir.
+              Estou pronto para dar o próximo passo e transformar meu
+              conhecimento em resultados.
             </p>
           </div>
         </div>

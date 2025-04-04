@@ -17,7 +17,7 @@ function Home() {
       <section className="Home-Section">
         <div className="titulos">
           <h1>CARLOS EDUARDO</h1>
-          <h4>FRONT-END DEVELOPER</h4>
+          <h4>SOFTWARE DEVELOPER</h4>
           <div className="contacts-containter">
             <a
               rel="noreferrer"
