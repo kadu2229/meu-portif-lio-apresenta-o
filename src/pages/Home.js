@@ -1,18 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Home.css";
 import Footer from "../components/Footer";
 import backgroundVideo from "../assets/backgroundVideo.mp4";
-import { useState } from "react";
-import { BsMortarboardFill } from "react-icons/bs";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { BsMortarboard } from "react-icons/bs";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
-  const [whichContent, setWhichContent] = useState('')
+  const [whichContent, setWhichContent] = useState('');
+
   return (
     <div className="all-page">
       <section className="Home-Section">
-        <video className="background-video" autoPlay loop muted playsInline>
+        <video
+          className="background-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
           <source src={backgroundVideo} type="video/mp4" />
         </video>
       </section>
@@ -20,18 +25,21 @@ function Home() {
       <div className="content">
         <p>FULL-STACK DEVELOPER</p>
         <h2>CARLOS EDUARDO</h2>
+
         <div className="socialContainer">
-          <a className="social"><FaLinkedin/>Linkedin</a>
-          <a className="social"><FaGithub/>Github</a>
+          <a className="social"><FaLinkedin /> Linkedin</a>
+          <a className="social"><FaGithub /> Github</a>
         </div>
       </div>
+
       <div className="selectedContent">
-        <div className="contentType"><BsMortarboardFill /></div>
+        <div className="contentType"><BsMortarboard /></div>
         <div className="contentType">2</div>
         <div className="contentType">3</div>
         <div className="contentType">4</div>
         <div className="contentType">5</div>
       </div>
+
       <Footer />
     </div>
   );
