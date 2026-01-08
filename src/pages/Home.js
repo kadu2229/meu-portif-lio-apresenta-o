@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../styles/Home.css";
 import Footer from "../components/Footer";
 import backgroundVideo from "../assets/backgroundVideo.mp4";
-import { BsMortarboard } from "react-icons/bs";
+import { FaGraduationCap } from "react-icons/fa";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
@@ -33,7 +33,7 @@ function Home() {
       </div>
 
       <div className="selectedContent">
-        <div className="contentType"><BsMortarboard /></div>
+        <div className="contentType"><FaGraduationCap /></div>
         <div className="contentType">2</div>
         <div className="contentType">3</div>
         <div className="contentType">4</div>
