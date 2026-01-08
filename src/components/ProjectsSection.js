@@ -1,12 +1,10 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
+import Footer from "./Footer";
 import "../styles/Portifolio.css";
-import { projects } from "../components/Projects";
+import { projects } from "./Projects";
 
 function Portifolio() {
   return (
     <div>
-      <Header />
       <section className="main">
         <div>
           <h1>PROJETOS</h1>

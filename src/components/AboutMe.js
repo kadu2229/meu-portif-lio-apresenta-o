@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import "../styles/AboutMe.css";
 import { AiOutlineArrowDown } from "react-icons/ai";
 
 function AboutMe() {
   return (
     <div className="About-Body">
-      <Header />
       <section className="aboutMe">
         <div className="aboutIMG">
           <img
@@ -44,7 +41,6 @@ function AboutMe() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

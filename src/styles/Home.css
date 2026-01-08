@@ -1,301 +1,123 @@
-* {
-  padding: 0px;
-  margin: 0px;
+.all-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: blue;
 }
 
 .Home-Section {
-  justify-content: center;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(240, 240, 240);
+  position: absolute;
+  inset: 0;
+  z-index: 0;
 }
 
-.home-img img {
-  width: 500px;
-  overflow: hidden;
+.background-video {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
 }
 
-@keyframes animacao {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+.Home-Section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.479);
+  z-index: 1;
 }
 
-@keyframes setaAnimation {
-  from {
-    transform: translateY(-7px);
-  }
-
-  to {
-    transform: translateY(7px);
-  }
-}
-
-.contacts-containter {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-}
-
-.contacts {
-  display: flex;
-  text-decoration: none;
-  background-color: rgb(140, 140, 255);
+.content {
+  position: relative;
+  z-index: 10;
   color: white;
-  margin: 10px 10px;
-  padding: 10px;
-  border-radius: 10px;
-  align-items: center;
-  text-align: center;
-  transition: 0.3s;
-  left: 0;
-}
-
-.contacts:hover {
-  background-color: rgb(81, 81, 156);
-  color: white;
-}
-
-.titulos {
-  font-size: 4vh;
+  margin-top: 25px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  /* background-color: rgba(100, 100, 100, 0.5); */
-  height: 300px;
-  margin: 0 30px;
-  border-radius: 10px;
-  color: rgb(140, 140, 255);
+  align-items: center;
+
+  gap: 0;
 }
 
-.titulos {
-  animation: 3s animacao;
+.content p {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
 }
 
-.contacts {
-  box-shadow: 2px 2px 5px rgb(141, 141, 141);
+.content h2 {
+  margin: 0;
+  font-size: 32px;
 }
 
-.Home-Skills {
-  flex-direction: column;
-  background-color: rgb(140, 140, 255);
-  border: none;
-  height: 100%;
-}
 
-.scroll-down {
-  font-size: 1rem;
-}
+.selectedContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
-.skills-h1 {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  font-size: 6vh;
-  color: white;
-}
 
-.skills-h1 svg {
-  color: white;
-  animation: 1s setaAnimation;
-  animation-iteration-count: infinite;
-}
-
-.skills-h1 h1 {
-  margin: 2vh;
-  font-size: 5vh;
-  background-color: rgb(255, 255, 255);
-  color: rgb(104, 114, 255);
-  box-shadow: 2px 2px 5px rgb(141, 141, 141);
-  padding: 10px;
-  border-radius: 10px;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-bottom: 5vh;
-}
-
-.skills div {
-  margin: 2%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  height: 300px;
-  width: 300px;
   background-color: white;
-  box-shadow: 2px 2px 5px rgb(141, 141, 141);
+  width: 80vw;
+  height: 100px;
   border-radius: 10px;
-  border: none;
+  z-index: 10;
+
+  font-size: 30px;
 }
 
-.skills-list-html {
+.contentType {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100%;
+  width: 20%;
+  background-color: white;
+  border-radius: 10px;
   transition: 0.3s;
 }
 
-.skills-list-css {
+.contentType:hover {
+  height: 120%;
+  background-color: blue;
+  color: white;
+}
+
+.socialContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin-top: 15px;
+}
+
+.social {
   justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 8px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.skills-list-js {
+.social:active {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width: 768px) {
+.content {
+  position: relative;
+  z-index: 10;
+  color: white;
+  margin-top: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  transition: 0.3s;
+
+  gap: 0;
 }
-
-.skills-list-react {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.skills-list-redux {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.skills-list-bootstrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.skills-list-jest {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  transition: 0.3s;
-}
-
-.skills-list-html:hover {
-  color: #e34c26;
-}
-
-.skills-list-css:hover {
-  color: #264de4;
-}
-
-.skills-list-js:hover {
-  color: #F0DB4F;
-}
-
-.skills-list-react:hover {
-  color: #61DBFB;
-}
-
-.skills-list-redux:hover {
-  color: #764abc;
-}
-
-.skills-list-bootstrap:hover {
-  color: rgb(13, 110, 253);
-}
-
-.skills-list-jest:hover {
-  color: rgb(170, 44, 170);
-}
-
-.skills-list-html svg {
-  font-size: 100px;
-}
-
-.skills-list-css svg {
-  font-size: 100px;
-}
-
-.skills-list-js svg {
-  font-size: 100px;
-}
-
-.skills-list-react svg {
-  font-size: 100px;
-}
-
-.skills-list-redux svg {
-  font-size: 100px;
-}
-
-.skills-list-bootstrap svg {
-  font-size: 100px;
-}
-
-.skills-list-jest svg {
-  font-size: 100px;
-}
-
-@media (max-width: 896px) {
-  .Home-Section {
-    flex-direction: column;
-    overflow: hidden;
-    margin: 0;
-    height: 80vh;
-  }
-
-  .home-img img {
-    height: 58vh;
-    width: 58vh;
-    margin-top: -50px;
-  }
-
-  .titulos {
-    font-size: 3vh;
-
-  }
-
-  .skills-list-html {
-    color: #e34c26;
-  }
-
-  .skills-list-css {
-    color: #264de4;
-  }
-
-  .skills-list-js {
-    color: #F0DB4F;
-  }
-
-  .skills-list-react {
-    color: #61DBFB;
-  }
-
-  .skills-list-redux {
-    color: #764abc;
-  }
-
-  .skills-list-bootstrap {
-    color: rgb(13, 110, 253);
-  }
-
-  .skills-list-jest {
-    color: rgb(170, 44, 170);
-  }
-}
+} 
