@@ -1,0 +1,79 @@
+.selectedContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  z-index: 10;
+
+  width: 100%;
+
+  font-size: 20px;
+}
+/* gambiarra para os cards pararem de quebrar */
+.teste {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+/* ===== CARD ===== */
+.contentType {
+  display: flex;
+  margin: 0 1px;
+  align-items: center;
+  justify-content: center;
+
+  height: 200px;
+  width: 7vw;
+  min-width: 0;
+
+  background-color: rgb(32, 0, 73);
+  border-radius: 5px;
+  color: white;
+
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+/* ===== CONTEÚDO INTERNO ===== */
+.contentInner {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ===== ATIVO ===== */
+.contentType.active {
+  width: 10%;
+  background-color: transparent;
+  border: 1px solid white;
+}
+
+.contentType.active .contentInner {
+  opacity: 1;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .selectedContent {
+    padding-top: 30px;
+  }
+
+  .contentType {
+    height: 150px;
+    width: 20vw ;
+  }
+
+  .contentType.active {
+    width: 30vw;
+  }
+}

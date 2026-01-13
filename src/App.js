@@ -1,13 +1,11 @@
-import { Route } from "react-router-dom";
 import "./App.css";
-import { Switch } from "react-router-dom";
+import { Cards } from "./components/Cards";
 import Home from "./pages/Home";
 function App() {
   return (
     <div className="App">
-      <Switch>
-        <Route exact path="/" component={Home} />
-      </Switch>
+        <Home />
+        <Cards />
     </div>
   );
 }
