@@ -60,8 +60,9 @@
 /* ===== ATIVO ===== */
 .contentType.active {
   width: 10%;
-  background-color: green;
-  border: 1px solid white;
+  background-color: transparent;
+  border: 2px solid rgb(117, 117, 255);
+  color: rgb(117, 117, 255);
 }
 
 .contentType .contentInner {
