@@ -8,6 +8,7 @@
   z-index: 10;
 
   width: 100%;
+  margin-top: 30px;
 
   font-size: 20px;
 }
@@ -29,7 +30,7 @@
   width: 7vw;
   min-width: 0;
 
-  background-color: rgb(32, 0, 73);
+  background-color: rgb(111, 0, 255);
   border-radius: 5px;
   color: white;
 
@@ -46,6 +47,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   opacity: 0;
   transition: opacity 0.3s ease;
@@ -54,20 +56,16 @@
 /* ===== ATIVO ===== */
 .contentType.active {
   width: 10%;
-  background-color: transparent;
+  background-color: green;
   border: 1px solid white;
 }
 
-.contentType.active .contentInner {
+.contentType .contentInner {
   opacity: 1;
 }
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .selectedContent {
-    padding-top: 30px;
-  }
-
   .contentType {
     height: 150px;
     width: 20vw ;

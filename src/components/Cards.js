@@ -44,8 +44,7 @@ export function Cards() {
             }
           >
             <div className="contentInner">
-              <span className="contentTitle">SOBRE MIM</span>
-              <p className="contentText">Conteúdo do sobre mim</p>
+              <span className="contentTitle">SOBRE</span>
             </div>
           </div>
 
@@ -59,7 +58,6 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">PROJETOS</span>
-              <p className="contentText">Conteúdo dos projetos</p>
             </div>
           </div>
 
@@ -73,7 +71,6 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">CONTATO</span>
-              <p className="contentText">Conteúdo de contato</p>
             </div>
           </div>
 
@@ -87,7 +84,6 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">SKILLS</span>
-              <p className="contentText">Conteúdo das skills</p>
             </div>
           </div>
 
@@ -101,7 +97,6 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">ACADÊMICO</span>
-              <p className="contentText">Conteúdo acadêmico</p>
             </div>
           </div>
         </div>

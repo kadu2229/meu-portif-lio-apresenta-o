@@ -5,11 +5,11 @@
 
 /* ===== SECTION / HERO ===== */
 .Home-Section {
-  background-image: url("../assets/backgroundImage.jpg");
+  background: linear-gradient( 135deg,rgb(100, 185, 255), rgb(155, 138, 255), rgb(67, 67, 179));
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 50vh;
+  height: 30vh;
 }
 
 /* ===== TEXTO PRINCIPAL ===== */
@@ -101,4 +101,10 @@
     align-items: center;
     gap: 0;
   }
+  .Home-Section {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 28vh;
+}
 }

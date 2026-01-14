@@ -1,0 +1,325 @@
+/* ======================================================
+   ABOUT
+====================================================== */
+
+.aboutBody {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  animation: fadeUp 0.6s ease forwards;
+}
+
+/* Título */
+.aboutBody h1 {
+  position: relative;
+
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111827;
+}
+
+/* Linha decorativa */
+.aboutBody h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #6366f1;
+  border-radius: 2px;
+}
+
+/* Texto */
+.aboutBody p {
+  margin: 0;
+
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.aboutBody p + p {
+  margin-top: 8px;
+}
+
+.aboutBody strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.aboutBody p:hover {
+  color: #111827;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .aboutBody {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .aboutBody h1 {
+    font-size: 2rem;
+  }
+
+  .aboutBody p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ======================================================
+   SKILLS
+====================================================== */
+
+.skillsBody {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  animation: fadeUp 0.6s ease forwards;
+  overflow-x: hidden;
+}
+
+.skillsBody h1 {
+  position: relative;
+
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111827;
+}
+
+.skillsBody h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #6366f1;
+  border-radius: 2px;
+}
+
+/* Grupos */
+.skillsGroup {
+  margin-bottom: 20px;
+}
+
+.skillsGroup h2 {
+  margin-bottom: 12px;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* Lista */
+.skillsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skillsList span {
+  padding: 8px 14px;
+
+  background: #eef2ff;
+  color: #4338ca;
+
+  font-size: 0.9rem;
+  font-weight: 500;
+
+  border-radius: 999px;
+  cursor: default;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skillsList span:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(67, 56, 202, 0.25);
+}
+
+/* Skill clicável */
+.skillItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillItem span {
+  width: fit-content;
+  cursor: pointer;
+}
+
+.skillDescription {
+  margin-top: 8px;
+  max-width: 420px;
+
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .skillsBody {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .skillsBody h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ======================================================
+   CONTACT
+====================================================== */
+
+.contactBody {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+  max-width: 900px;
+  padding: 40px;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.contactBody h1 {
+  position: relative;
+
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #111827;
+}
+
+.contactBody h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #6366f1;
+  border-radius: 2px;
+}
+
+.contactIntro {
+  margin-bottom: 24px;
+
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #374151;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactItem {
+  padding: 16px 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  text-decoration: none;
+
+  transition: border 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactItem:hover {
+  border-color: #6366f1;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.15);
+}
+
+.contactLabel {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #6366f1;
+
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contactValue {
+  margin-top: 4px;
+
+  font-size: 1rem;
+  color: #111827;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .contactBody {
+    padding: 28px 20px;
+    border-radius: 12px;
+  }
+
+  .contactBody h1 {
+    font-size: 2rem;
+  }
+}
+
+/* ======================================================
+   ANIMAÇÕES
+====================================================== */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
