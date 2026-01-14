@@ -4,7 +4,7 @@ import "../styles/CardSelectedContent.css";
 export function Academic() {
   return (
     <div className="academicBody">
-      <h1>academic</h1>
+      <h1>Acadêmico</h1>
 
       <div className="academicItem">
         <span className="academicPeriod">2024 – atual</span>
