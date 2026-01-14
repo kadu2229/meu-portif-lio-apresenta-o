@@ -5,9 +5,14 @@ import { Projects } from "../components/Projects";
 import { Contact } from "../components/Contact";
 import { Skills } from "../components/Skills";
 import { Academic } from "../components/Academic";
+import { FaMessage } from "react-icons/fa6";
+import { HiOutlineAcademicCap } from "react-icons/hi";
+import { GiSkills } from "react-icons/gi";
+import { MdOutlineContactPhone } from "react-icons/md";
+import { GoProjectSymlink } from "react-icons/go";
 
 export function Cards() {
-  const [whichContent, setWhichContent] = useState("");
+  const [whichContent, setWhichContent] = useState("sobre");
 
   const SelectAndRender = () => {
     switch (whichContent) {
@@ -45,6 +50,7 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">SOBRE</span>
+              <FaMessage className="cardIcon" />
             </div>
           </div>
 
@@ -58,6 +64,7 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">PROJETOS</span>
+              <GoProjectSymlink className="cardIcon" />
             </div>
           </div>
 
@@ -71,6 +78,7 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">CONTATO</span>
+              <MdOutlineContactPhone className="cardIcon" />
             </div>
           </div>
 
@@ -84,6 +92,7 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">SKILLS</span>
+              <GiSkills className="cardIcon" />
             </div>
           </div>
 
@@ -97,6 +106,7 @@ export function Cards() {
           >
             <div className="contentInner">
               <span className="contentTitle">ACADÊMICO</span>
+              <HiOutlineAcademicCap className="cardIcon" />
             </div>
           </div>
         </div>

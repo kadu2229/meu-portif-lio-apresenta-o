@@ -10,13 +10,17 @@
   width: 100%;
   margin-top: 30px;
 
-  font-size: 20px;
+  font-size: 12px;
 }
 /* gambiarra para os cards pararem de quebrar */
 .teste {
   display: flex;
   width: 100%;
   justify-content: center;
+}
+
+.cardIcon {
+  font-size: 20px;
 }
 
 /* ===== CARD ===== */

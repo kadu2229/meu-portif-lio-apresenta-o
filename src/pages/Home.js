@@ -1,7 +1,6 @@
 import "../styles/Home.css";
 import Footer from "../components/Footer";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { Cards } from "../components/Cards";
 
 function Home() {
 
