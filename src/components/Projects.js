@@ -3,7 +3,7 @@ import "../styles/CardSelectedContent.css";
 export function Projects() {
   return (
     <div className="Projects-body">
-      <h1>Projects</h1>
+      <h1>Projetos</h1>
     </div>
   );
 }
