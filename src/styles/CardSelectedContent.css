@@ -250,6 +250,7 @@
 
 .contactBody h1 {
   position: relative;
+
   margin-bottom: 16px;
   padding-bottom: 12px;
 
@@ -273,48 +274,91 @@
 
 .contactIntro {
   margin-bottom: 24px;
+
   font-size: 1.05rem;
   line-height: 1.7;
   color: #374151;
 }
 
-.contactList {
+.contactForm {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
+  margin-bottom: 32px;
 }
 
-.contactItem {
-  display: flex;
-  flex-direction: column;
-  padding: 16px 20px;
+.contactForm input,
+.contactForm textarea {
+  padding: 14px 16px;
 
   border: 1px solid #e5e7eb;
+  border-radius: 10px;
+
+  font-size: 0.95rem;
+  font-family: inherit;
+
+  outline: none;
+  resize: none;
+}
+
+.contactForm textarea {
+  min-height: 120px;
+}
+
+.contactForm input:focus,
+.contactForm textarea:focus {
+  border-color: #6366f1;
+}
+
+.contactForm button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  margin-top: 8px;
+  padding: 14px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: #6366f1;
+  color: #ffffff;
+
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contactForm button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.25);
+}
+
+.whatsappButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  padding: 14px;
+
+  background: #22c55e;
+  color: #ffffff;
+  font-size: 14px;
+
   border-radius: 12px;
   text-decoration: none;
-
-  transition: border 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.contactItem:hover {
-  border-color: #6366f1;
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(99, 102, 241, 0.15);
-}
-
-.contactLabel {
-  font-size: 0.85rem;
   font-weight: 600;
-  color: #6366f1;
 
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.contactValue {
-  margin-top: 4px;
-  font-size: 1rem;
-  color: #111827;
+.whatsappButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(34, 197, 94, 0.25);
 }
 
 /*mobile*/

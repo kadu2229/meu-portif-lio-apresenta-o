@@ -1,5 +1,4 @@
 import "../styles/Home.css";
-import Footer from "../components/Footer";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Home() {
@@ -28,7 +27,6 @@ function Home() {
           </div>
         </div>
       </section>
-      <Footer />
     </div>
   );
 }

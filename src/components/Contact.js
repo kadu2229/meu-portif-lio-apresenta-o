@@ -1,50 +1,75 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/CardSelectedContent.css";
 import { MdEmail } from "react-icons/md";
-import { FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 
 export function Contact() {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  function handleChange(e) {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  }
+
   return (
     <div className="contactBody">
       <h1>Contato</h1>
 
       <p className="contactIntro">
-        Quer conversar sobre oportunidades, projetos ou trocar uma ideia?
-        Fique à vontade para entrar em contato comigo 👋
+        Quer falar sobre oportunidades, projetos ou parcerias?
+        Me mande uma mensagem!
       </p>
 
-      <div className="contactList">
-        <a
-          href="mailto:kadu2229@yahoo.com.br"
-          className="contactItem"
-        >
-          <div className="contactIcon">
-            <MdEmail />
-          </div>
+      <form
+        className="contactForm"
+        action={`mailto:kadu2229@yahoo.com.br`}
+        method="POST"
+        encType="text/plain"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Seu nome"
+          required
+          value={form.name}
+          onChange={handleChange}
+        />
 
-          <div className="contactInfo">
-            <span className="contactLabel">Email</span>
-            <span className="contactValue">
-              kadu2229@yahoo.com.br
-            </span>
-          </div>
-        </a>
+        <input
+          type="email"
+          name="email"
+          placeholder="Seu email"
+          required
+          value={form.email}
+          onChange={handleChange}
+        />
 
-        <a
-          href="https://www.linkedin.com/in/carlos-eduardo-s-710555119/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contactItem"
-        >
-          <div className="contactIcon">
-            <FaLinkedin />
-          </div>
+        <textarea
+          name="message"
+          placeholder="Sua mensagem"
+          required
+          value={form.message}
+          onChange={handleChange}
+        />
 
-          <div className="contactInfo">
-            <span className="contactLabel">LinkedIn</span>
-          </div>
-        </a>
-      </div>
+        <button type="submit">
+          <MdEmail />
+          Enviar mensagem
+        </button>
+      </form>
+
+      <a
+        href="https://wa.me/5521974283146?text="
+        target="_blank"
+        rel="noopener noreferrer"
+        className="whatsappButton"
+      >
+        <FaWhatsapp />
+        Falar comigo no WhatsApp
+      </a>
     </div>
   );
 }

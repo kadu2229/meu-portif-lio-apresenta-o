@@ -23,7 +23,7 @@ const skillsData = {
   Cloudinary: "Serviço de gerenciamento e otimização de imagens."
 };
 
-const frontEnd = ["React", "JavaScript (ES6+)", "Redux", "HTML5", "CSS3"];
+const frontEnd = ["React", "Redux", "HTML5", "CSS3"];
 const backEnd = ["Node.js", "Express", "JWT", "REST APIs", "MVC"];
 const tests = ["Jest"];
 const languages = ["JavaScript", "C#"];
