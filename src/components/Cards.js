@@ -68,19 +68,6 @@ export function Cards() {
             </div>
           </div>
 
-          <div
-            className={`contentType ${
-              whichContent === "contato" ? "active" : ""
-            }`}
-            onClick={() =>
-              setWhichContent(whichContent === "contato" ? "" : "contato")
-            }
-          >
-            <div className="contentInner">
-              <span className="contentTitle">CONTATO</span>
-              <MdOutlineContactPhone className="cardIcon" />
-            </div>
-          </div>
 
           <div
             className={`contentType ${
@@ -107,6 +94,19 @@ export function Cards() {
             <div className="contentInner">
               <span className="contentTitle">ACADÊMICO</span>
               <HiOutlineAcademicCap className="cardIcon" />
+            </div>
+          </div>
+          <div
+            className={`contentType ${
+              whichContent === "contato" ? "active" : ""
+            }`}
+            onClick={() =>
+              setWhichContent(whichContent === "contato" ? "" : "contato")
+            }
+          >
+            <div className="contentInner">
+              <span className="contentTitle">CONTATO</span>
+              <MdOutlineContactPhone className="cardIcon" />
             </div>
           </div>
         </div>
