@@ -177,7 +177,7 @@
 
 .skillsGroup {
   margin-bottom: 20px;
-  border: 2px solid blue ;
+  border: 2px solid #6366f1 ;
   border-radius: 10px;
   padding: 20px;
 }
@@ -217,7 +217,11 @@
 
 .skillItem {
   display: flex;
+  background: linear-gradient( 135deg,rgb(100, 185, 255), rgb(155, 138, 255), rgb(67, 67, 179));
+  color: white;
   flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
 }
 
 .skillItem span {
@@ -230,7 +234,7 @@
   width: 100%;
   font-size: 0.9rem;
   line-height: 1.5;
-  color: #3582ff;
+  color: white;
 }
 
 /*contact*/

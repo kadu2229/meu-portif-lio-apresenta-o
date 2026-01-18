@@ -37,20 +37,23 @@ export function Skills() {
     setActiveSkill(skill === activeSkill ? null : skill);
   };
 
-  const renderList = (list) =>
-    list.map((skill) => (
-      <div key={skill} className="skillItem">
-        <span onClick={() => handleClick(skill)}>
-          {skill}
-        </span>
+ const renderList = (list) =>
+  list.map((skill) => (
+    <div key={skill} className="skillItem">
+      <span onClick={() => handleClick(skill)}>
+        {skill}
+      </span>
 
-        {activeSkill === skill && (
-          <p className="skillDescription">
-            {skillsData[skill]}
-          </p>
-        )}
-      </div>
-    ));
+      <p
+        className={`skillDescription ${
+          activeSkill === skill ? "open" : ""
+        }`}
+      >
+        {skillsData[skill]}
+      </p>
+    </div>
+  ));
+
 
   return (
     <div className="skillsBody">
