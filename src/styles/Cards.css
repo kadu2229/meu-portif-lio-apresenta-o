@@ -35,7 +35,7 @@
   min-width: 0;
   font-size: 11px;
 
-  background: linear-gradient(rgb(100, 185, 255), rgb(155, 138, 255), rgb(67, 67, 179));
+  background-color: rgb(155, 138, 255);
   border-radius: 5px;
   color: white;
 
